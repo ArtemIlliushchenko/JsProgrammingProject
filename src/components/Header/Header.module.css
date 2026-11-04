@@ -1,0 +1,47 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  height: 60px;
+}
+
+.logo {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.link {
+  color: var(--muted);
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.link:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    display: none;
+  }
+
+  .nav {
+    gap: 14px;
+  }
+}

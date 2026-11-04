@@ -1,0 +1,32 @@
+.list {
+  display: grid;
+  gap: 16px;
+}
+
+.item {
+  display: flex;
+  gap: 24px;
+  align-items: baseline;
+}
+
+.period {
+  color: var(--accent);
+  font-weight: 500;
+  white-space: nowrap;
+  min-width: 100px;
+}
+
+.place {
+  font-size: 17px;
+}
+
+.field {
+  color: var(--muted);
+}
+
+@media (max-width: 600px) {
+  .item {
+    flex-direction: column;
+    gap: 4px;
+  }
+}

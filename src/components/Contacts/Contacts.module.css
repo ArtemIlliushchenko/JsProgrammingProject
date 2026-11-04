@@ -1,0 +1,16 @@
+.list {
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+
+.item {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.label {
+  min-width: 90px;
+  color: var(--muted);
+}
